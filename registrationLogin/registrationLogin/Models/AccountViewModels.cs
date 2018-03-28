@@ -80,6 +80,29 @@ namespace registrationLogin.Models
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
         public string Code { get; set; }
+        [Display(Name ="First Name")]
+        public string firstName { get; set; }
+        [DataType(DataType.Text)]
+        [StringLength(50, MinimumLength = 2)]
+        [Display(Name ="Last Name")]
+        public string lastName { get; set; }
+        [Display(Name ="First Line of your address")]
+        public string fLAddress { get; set; }
+        [DataType(DataType.Text)]
+        [StringLength(50, MinimumLength = 5)]
+        [Display(Name =("Second Line of your address"))]
+        public string sLaddress { get; set; }
+        [Display(Name =("City"))]
+        public string city { get; set; }
+        [DataType(DataType.Text)]
+        [StringLength(9, MinimumLength = 3)]
+        [Display(Name =("Postcode"))]
+        public string postCode { get; set; }
+      [Display(Name =("Order by phone"))]
+        public bool orderbyPhone { get; set; }
+        [DataType(DataType.PhoneNumber)]
+        [Display(Name ="Phone number")]
+        public int phoneNumber { get; set; }
     }
 
     public class ResetPasswordViewModel
@@ -88,13 +111,11 @@ namespace registrationLogin.Models
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
-
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public string Password { get; set; }
-
         [DataType(DataType.Password)]
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]

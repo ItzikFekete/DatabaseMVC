@@ -151,7 +151,17 @@ namespace registrationLogin.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { UserName = model.Email,
+                    Email = model.Email,
+                    firstName = model.firstName,
+                    lastName = model.lastName,
+                    fLAddress= model.fLAddress,
+                    sLaddress = model.sLaddress,
+                    city = model.city,
+                    postCode = model.postCode,
+                    phoneNumber = model.phoneNumber
+                    
+                };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {

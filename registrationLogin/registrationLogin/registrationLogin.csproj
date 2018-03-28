@@ -199,6 +199,38 @@
     <Compile Include="Migrations\201803271254396_Code.Designer.cs">
       <DependentUpon>201803271254396_Code.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803271601065_firstName.cs" />
+    <Compile Include="Migrations\201803271601065_firstName.Designer.cs">
+      <DependentUpon>201803271601065_firstName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803271602348_lastName.cs" />
+    <Compile Include="Migrations\201803271602348_lastName.Designer.cs">
+      <DependentUpon>201803271602348_lastName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803271608404_city.cs" />
+    <Compile Include="Migrations\201803271608404_city.Designer.cs">
+      <DependentUpon>201803271608404_city.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803271609558_fLAddress.cs" />
+    <Compile Include="Migrations\201803271609558_fLAddress.Designer.cs">
+      <DependentUpon>201803271609558_fLAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803271611284_sLaddress.cs" />
+    <Compile Include="Migrations\201803271611284_sLaddress.Designer.cs">
+      <DependentUpon>201803271611284_sLaddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803271612203_postCode.cs" />
+    <Compile Include="Migrations\201803271612203_postCode.Designer.cs">
+      <DependentUpon>201803271612203_postCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803271613211_orderbyPhone.cs" />
+    <Compile Include="Migrations\201803271613211_orderbyPhone.Designer.cs">
+      <DependentUpon>201803271613211_orderbyPhone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803271614524_phoneNumber.cs" />
+    <Compile Include="Migrations\201803271614524_phoneNumber.Designer.cs">
+      <DependentUpon>201803271614524_phoneNumber.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -325,6 +357,30 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201803271254396_Code.resx">
       <DependentUpon>201803271254396_Code.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803271601065_firstName.resx">
+      <DependentUpon>201803271601065_firstName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803271602348_lastName.resx">
+      <DependentUpon>201803271602348_lastName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803271608404_city.resx">
+      <DependentUpon>201803271608404_city.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803271609558_fLAddress.resx">
+      <DependentUpon>201803271609558_fLAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803271611284_sLaddress.resx">
+      <DependentUpon>201803271611284_sLaddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803271612203_postCode.resx">
+      <DependentUpon>201803271612203_postCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803271613211_orderbyPhone.resx">
+      <DependentUpon>201803271613211_orderbyPhone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803271614524_phoneNumber.resx">
+      <DependentUpon>201803271614524_phoneNumber.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

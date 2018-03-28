@@ -11,6 +11,64 @@
     <h4>Create a new account.</h4>
     <hr />
     @Html.ValidationSummary("", new { @class = "text-danger" })
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.firstName, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.firstName, new { @class = "form-control f1N" })
+            @Html.ValidationMessageFor(m => m.firstName)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.lastName, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.lastName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.lastName)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.fLAddress, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.fLAddress, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.fLAddress)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.sLaddress, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.sLaddress, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.sLaddress)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.city, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.city, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.city)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.postCode, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.postCode, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.postCode)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.orderbyPhone, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10 phoneyes">
+            @Html.RadioButtonFor(m => m.orderbyPhone, "true") Yes
+            @Html.RadioButtonFor(m => m.orderbyPhone, "false") No
+            @Html.ValidationMessageFor(m => m.orderbyPhone)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.phoneNumber, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.phoneNumber, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.phoneNumber)
+        </div>
+    </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
