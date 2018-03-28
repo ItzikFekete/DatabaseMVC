@@ -1,0 +1,25 @@
+﻿body {
+    margin-left:20px;
+    background-image:url("../../img/coffeeshopMainBackground.png");
+}
+.container{
+    background-image:none;
+}
+.form-horizontal {
+    border:solid;
+    background-color:moccasin;
+    font-weight: 800;
+    font-family: Castellar;
+}.topPage {
+    margin: 20px;
+    background-image: url("../../img/coffee-shop-1.png");
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-weight: 400;
+    font-family: Bookman Old Style;
+    color: antiquewhite;
+}
+

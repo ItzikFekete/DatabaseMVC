@@ -35,14 +35,13 @@ namespace registrationLogin.Migrations
                 c => new
                     {
                         Id = c.String(nullable: false, maxLength: 128),
-                        Code = c.String(),
+                        title = c.String(),
                         firstName = c.String(),
                         lastName = c.String(),
                         fLAddress = c.String(),
                         sLaddress = c.String(),
                         city = c.String(),
                         postCode = c.String(),
-                        orderbyPhone = c.Boolean(nullable: false),
                         phoneNumber = c.Int(nullable: false),
                         Email = c.String(maxLength: 256),
                         EmailConfirmed = c.Boolean(nullable: false),

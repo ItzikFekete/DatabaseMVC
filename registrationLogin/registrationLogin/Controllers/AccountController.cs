@@ -153,6 +153,7 @@ namespace registrationLogin.Controllers
             {
                 var user = new ApplicationUser { UserName = model.Email,
                     Email = model.Email,
+                    title= model.title,
                     firstName = model.firstName,
                     lastName = model.lastName,
                     fLAddress= model.fLAddress,

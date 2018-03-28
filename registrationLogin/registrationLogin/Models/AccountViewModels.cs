@@ -79,9 +79,10 @@ namespace registrationLogin.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
-        public string Code { get; set; }
+        public string title { get; set; }
         [Display(Name ="First Name")]
         public string firstName { get; set; }
+        [Required]
         [DataType(DataType.Text)]
         [StringLength(50, MinimumLength = 2)]
         [Display(Name ="Last Name")]
@@ -98,8 +99,7 @@ namespace registrationLogin.Models
         [StringLength(9, MinimumLength = 3)]
         [Display(Name =("Postcode"))]
         public string postCode { get; set; }
-      [Display(Name =("Order by phone"))]
-        public bool orderbyPhone { get; set; }
+        [Required]
         [DataType(DataType.PhoneNumber)]
         [Display(Name ="Phone number")]
         public int phoneNumber { get; set; }
