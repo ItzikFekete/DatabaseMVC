@@ -1,0 +1,112 @@
+﻿@model IEnumerable<registrationLogin.Models.Order>
+
+@{
+    ViewBag.Title = "Index";
+}
+<style>
+    .detailDisplay{
+        font-family:'Lucida Calligraphy';
+        font-weight:500;
+        background-color:blanchedalmond;
+        color:coral darkblue;
+    }
+</style>
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table detailDisplay">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.coffee)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.espresso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.chocoloate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.frappucino)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.shakes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tea)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bottlesAndCans)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.breakfast)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lunch)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bakery)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.snacksAndSweets)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.beans)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.capsules)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.coffee)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.espresso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.chocoloate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.frappucino)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.shakes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tea)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bottlesAndCans)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.breakfast)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lunch)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bakery)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.snacksAndSweets)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.beans)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.capsules)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

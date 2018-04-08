@@ -33,13 +33,13 @@
     <div class="topPage">   
         <h1>Roast Well</h1>
         <p class="lead">Fresh Coffee, that will keep you fresh </p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-lg">Order &raquo;</a></p>
+        <p><a href="@Url.Action("Index", null, new { area=string.Empty, controller = "Orders/Create"}, Request.Url.Scheme)"> <span class ="btn btn-primary btn-lg">Order</span> &raquo;</a></p>
     </div>
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Roast Well</p>
         </footer>
     </div>
     <link rel="stylesheet" href="~/Scripts/esm/style.css" />
