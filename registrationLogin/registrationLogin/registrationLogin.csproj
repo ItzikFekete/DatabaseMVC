@@ -309,10 +309,6 @@
     <Compile Include="Migrations\201803271612203_postCode.Designer.cs">
       <DependentUpon>201803271612203_postCode.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201803271614524_phoneNumber.cs" />
-    <Compile Include="Migrations\201803271614524_phoneNumber.Designer.cs">
-      <DependentUpon>201803271614524_phoneNumber.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201803281312514_title1.cs" />
     <Compile Include="Migrations\201803281312514_title1.Designer.cs">
       <DependentUpon>201803281312514_title1.cs</DependentUpon>
@@ -478,9 +474,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803271612203_postCode.resx">
       <DependentUpon>201803271612203_postCode.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803271614524_phoneNumber.resx">
-      <DependentUpon>201803271614524_phoneNumber.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803281312514_title1.resx">
       <DependentUpon>201803281312514_title1.cs</DependentUpon>

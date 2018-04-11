@@ -16,7 +16,7 @@ namespace registrationLogin.Models
         public string sLaddress { get; set; }
         public string city { get; set; }
         public string postCode { get; set; }
-        public int phoneNumber { get; set; }
+       
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {

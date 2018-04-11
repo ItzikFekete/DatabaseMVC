@@ -346,7 +346,6 @@ C:\Users\Itzik Private\Documents\GitHub\DatabaseMVC\registrationLogin\registrati
 C:\Users\Itzik Private\Documents\GitHub\DatabaseMVC\registrationLogin\registrationLogin\obj\Debug\registrationLogin.Migrations.fLAddress.resources
 C:\Users\Itzik Private\Documents\GitHub\DatabaseMVC\registrationLogin\registrationLogin\obj\Debug\registrationLogin.Migrations.sLaddress.resources
 C:\Users\Itzik Private\Documents\GitHub\DatabaseMVC\registrationLogin\registrationLogin\obj\Debug\registrationLogin.Migrations.postCode.resources
-C:\Users\Itzik Private\Documents\GitHub\DatabaseMVC\registrationLogin\registrationLogin\obj\Debug\registrationLogin.Migrations.phoneNumber.resources
 C:\Users\Itzik Private\Documents\GitHub\DatabaseMVC\registrationLogin\registrationLogin\obj\Debug\registrationLogin.Migrations.title1.resources
 C:\Users\Itzik Private\Documents\GitHub\DatabaseMVC\registrationLogin\registrationLogin\obj\Debug\registrationLogin.Migrations.Order.resources
 C:\Users\Itzik Private\Documents\GitHub\DatabaseMVC\registrationLogin\registrationLogin\obj\Debug\registrationLogin.Migrations.OrderDBContext.resources

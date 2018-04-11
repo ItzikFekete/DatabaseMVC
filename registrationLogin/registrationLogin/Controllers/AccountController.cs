@@ -160,8 +160,7 @@ namespace registrationLogin.Controllers
                     sLaddress = model.sLaddress,
                     city = model.city,
                     postCode = model.postCode,
-                    phoneNumber = model.phoneNumber
-                    
+                   
                 };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
