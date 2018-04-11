@@ -40,6 +40,7 @@ namespace registrationLogin.Controllers
         // GET: Orders/Create
         public ActionResult Create()
         {
+            
             return View();
         }
 
@@ -50,6 +51,7 @@ namespace registrationLogin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,coffee,espresso,chocoloate,frappucino,shakes,tea,bottlesAndCans,breakfast,lunch,bakery,snacksAndSweets,beans,capsules")] Order order)
         {
+
             if (ModelState.IsValid)
             {
                 db.Orders.Add(order);
@@ -127,3 +129,4 @@ namespace registrationLogin.Controllers
         }
     }
 }
+

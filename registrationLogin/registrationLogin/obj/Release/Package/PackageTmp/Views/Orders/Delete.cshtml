@@ -1,0 +1,128 @@
+﻿@model registrationLogin.Models.Order
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.coffee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coffee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.espresso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.espresso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.chocoloate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.chocoloate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.frappucino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.frappucino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.shakes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.shakes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tea)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tea)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bottlesAndCans)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bottlesAndCans)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.breakfast)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.breakfast)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lunch)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lunch)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bakery)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bakery)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.snacksAndSweets)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.snacksAndSweets)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.beans)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.beans)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.capsules)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.capsules)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

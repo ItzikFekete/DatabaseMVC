@@ -7,26 +7,29 @@ using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 
 namespace registrationLogin.Models
+    
 {
     public class Order
     {
         public int Id { get; set; }
         [Display(Name = "Coffee")]
-        public string coffee { get; set; }
-        public string espresso { get; set; }
-        public string chocoloate { get; set; }
-        public string frappucino { get; set; }
-        public string shakes { get; set; }
-        public string tea { get; set; }
-        public string bottlesAndCans { get; set; }
-        public string breakfast { get; set; }
-        public string lunch { get; set; }
-        public string bakery { get; set; }
-        public string snacksAndSweets { get; set; }
-        public string beans { get; set; }
-        public string capsules { get; set; }
+        public string Coffee { get; set; }
+        public string Espresso { get; set; }
+        public string Chocoloate { get; set; }
+        public string Frappucino { get; set; }
+        public string Shakes { get; set; }
+        public string Tea { get; set; }
+        public string BottlesAndCans { get; set; }
+        public string Breakfast { get; set; }
+        public string Lunch { get; set; }
+        public string Bakery { get; set; }
+        public string SnacksAndSweets { get; set; }
+        public string Beans { get; set; }
+        public string Capsules { get; set; }
         public IEnumerable<SelectListItem> Coffees { get; set; }
     }
+  
+   
 
     public class OrderDBCOntext : DbContext
     {
@@ -36,7 +39,7 @@ namespace registrationLogin.Models
 
 
 
-    /*public enum Coffee
+    public enum Coffees
     {
         Americano, 
         [Display(Name ="Arabian Nights")]
@@ -48,5 +51,8 @@ namespace registrationLogin.Models
         [Display(Name = "Mexican Secret")]
         mexicanSecret
     }
+public struct Convertenum
+{
+    public int Value { get; set; }
+    public string Text { get; set; }
 }
-*/

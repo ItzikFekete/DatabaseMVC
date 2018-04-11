@@ -60,8 +60,8 @@ namespace registrationLogin
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {
-                ClientId = "474153266619-9l98lkostaihq160orfkcvfaj9h7itoa.apps.googleusercontent.com",
-                ClientSecret = "NNM1PRHq501nJGlzx9NnbWHv"
+                ClientId = "474153266619-3b3lspevorhslgnrn9qspmdmpqqqj8qv.apps.googleusercontent.com",
+                ClientSecret = "MNssBwsQ2jt9Lq1ejoVKoMZU"
             });
         }
     }
