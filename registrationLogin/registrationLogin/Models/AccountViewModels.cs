@@ -79,30 +79,30 @@ namespace registrationLogin.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
-        public string title { get; set; }
+        public string Title { get; set; }
         [Display(Name ="First Name")]
-        public string firstName { get; set; }
+        public string FirstName { get; set; }
         [Required]
         [DataType(DataType.Text)]
         [StringLength(50, MinimumLength = 2)]
         [Display(Name ="Last Name")]
-        public string lastName { get; set; }
+        public string LastName { get; set; }
         [Display(Name ="First Line of your address")]
-        public string fLAddress { get; set; }
+        public string FLAddress { get; set; }
         [DataType(DataType.Text)]
         [StringLength(50, MinimumLength = 5)]
         [Display(Name =("Second Line of your address"))]
-        public string sLaddress { get; set; }
+        public string SLaddress { get; set; }
         [Display(Name =("City"))]
-        public string city { get; set; }
+        public string City { get; set; }
         [DataType(DataType.Text)]
         [StringLength(9, MinimumLength = 3)]
         [Display(Name =("Postcode"))]
-        public string postCode { get; set; }
+        public string PostCode { get; set; }
         [Required]
         [DataType(DataType.PhoneNumber)]
         [Display(Name ="Phone number")]
-        public int phoneNumber { get; set; }
+        public int PhoneNumber { get; set; }
     }
 
     public class ResetPasswordViewModel

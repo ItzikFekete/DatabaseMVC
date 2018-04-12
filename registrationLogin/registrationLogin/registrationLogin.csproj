@@ -285,30 +285,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201803271601065_firstName.cs" />
-    <Compile Include="Migrations\201803271601065_firstName.Designer.cs">
-      <DependentUpon>201803271601065_firstName.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201803271602348_lastName.cs" />
-    <Compile Include="Migrations\201803271602348_lastName.Designer.cs">
-      <DependentUpon>201803271602348_lastName.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201803271608404_city.cs" />
-    <Compile Include="Migrations\201803271608404_city.Designer.cs">
-      <DependentUpon>201803271608404_city.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201803271609558_fLAddress.cs" />
-    <Compile Include="Migrations\201803271609558_fLAddress.Designer.cs">
-      <DependentUpon>201803271609558_fLAddress.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201803271611284_sLaddress.cs" />
-    <Compile Include="Migrations\201803271611284_sLaddress.Designer.cs">
-      <DependentUpon>201803271611284_sLaddress.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201803271612203_postCode.cs" />
-    <Compile Include="Migrations\201803271612203_postCode.Designer.cs">
-      <DependentUpon>201803271612203_postCode.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201803281312514_title1.cs" />
     <Compile Include="Migrations\201803281312514_title1.Designer.cs">
       <DependentUpon>201803281312514_title1.cs</DependentUpon>
@@ -320,6 +296,34 @@
     <Compile Include="Migrations\201804090013312_OrderDBContext.cs" />
     <Compile Include="Migrations\201804090013312_OrderDBContext.Designer.cs">
       <DependentUpon>201804090013312_OrderDBContext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804120845290_FirstName.cs" />
+    <Compile Include="Migrations\201804120845290_FirstName.Designer.cs">
+      <DependentUpon>201804120845290_FirstName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804120846371_LastName.cs" />
+    <Compile Include="Migrations\201804120846371_LastName.Designer.cs">
+      <DependentUpon>201804120846371_LastName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804120847452_City.cs" />
+    <Compile Include="Migrations\201804120847452_City.Designer.cs">
+      <DependentUpon>201804120847452_City.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804120848441_FLaddress.cs" />
+    <Compile Include="Migrations\201804120848441_FLaddress.Designer.cs">
+      <DependentUpon>201804120848441_FLaddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804120850064_SLaddress.cs" />
+    <Compile Include="Migrations\201804120850064_SLaddress.Designer.cs">
+      <DependentUpon>201804120850064_SLaddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804120851277_PostCode.cs" />
+    <Compile Include="Migrations\201804120851277_PostCode.Designer.cs">
+      <DependentUpon>201804120851277_PostCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804120854164_Title.cs" />
+    <Compile Include="Migrations\201804120854164_Title.Designer.cs">
+      <DependentUpon>201804120854164_Title.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -457,24 +461,6 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201803271601065_firstName.resx">
-      <DependentUpon>201803271601065_firstName.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803271602348_lastName.resx">
-      <DependentUpon>201803271602348_lastName.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803271608404_city.resx">
-      <DependentUpon>201803271608404_city.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803271609558_fLAddress.resx">
-      <DependentUpon>201803271609558_fLAddress.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803271611284_sLaddress.resx">
-      <DependentUpon>201803271611284_sLaddress.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803271612203_postCode.resx">
-      <DependentUpon>201803271612203_postCode.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803281312514_title1.resx">
       <DependentUpon>201803281312514_title1.cs</DependentUpon>
     </EmbeddedResource>
@@ -483,6 +469,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804090013312_OrderDBContext.resx">
       <DependentUpon>201804090013312_OrderDBContext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804120845290_FirstName.resx">
+      <DependentUpon>201804120845290_FirstName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804120846371_LastName.resx">
+      <DependentUpon>201804120846371_LastName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804120847452_City.resx">
+      <DependentUpon>201804120847452_City.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804120848441_FLaddress.resx">
+      <DependentUpon>201804120848441_FLaddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804120850064_SLaddress.resx">
+      <DependentUpon>201804120850064_SLaddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804120851277_PostCode.resx">
+      <DependentUpon>201804120851277_PostCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804120854164_Title.resx">
+      <DependentUpon>201804120854164_Title.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

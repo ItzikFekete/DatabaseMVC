@@ -12,62 +12,62 @@
     <hr />
     @Html.ValidationSummary("", new { @class = "text-danger" })
     <div class="form-group">
-        @Html.LabelFor(m => m.title, new { @class = "col-md-2 control-label" })
+        @Html.LabelFor(m => m.Title, new { @class = "col-md-2 control-label" })
         <div class="col-md-10 phoneyes">
-            @Html.RadioButtonFor(m => m.title, "Mr.", new { @id="mister"} ) Mr. 
-            @Html.RadioButtonFor(m => m.title, "Mrs.", new { @id = "misus" }) Mrs. 
-            @Html.RadioButtonFor(m => m.title, "Ms." , new { @id = "miss" }) Ms.
-            @Html.RadioButtonFor(m => m.title, "Miss", new { @id = "ms" }) Miss
-            @Html.ValidationMessageFor(m => m.title)
+            @Html.RadioButtonFor(m => m.Title, "Mr.", new { @id="mister"} ) Mr. 
+            @Html.RadioButtonFor(m => m.Title, "Mrs.", new { @id = "misus" }) Mrs. 
+            @Html.RadioButtonFor(m => m.Title, "Ms." , new { @id = "miss" }) Ms.
+            @Html.RadioButtonFor(m => m.Title, "Miss", new { @id = "ms" }) Miss
+            @Html.ValidationMessageFor(m => m.Title)
         </div>
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.firstName, new { @class = "col-md-2 control-label" })
+        @Html.LabelFor(m => m.FirstName, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
-            @Html.TextBoxFor(m => m.firstName, new { @class = "form-control f1N" })
-            @Html.ValidationMessageFor(m => m.firstName)
+            @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control f1N" })
+            @Html.ValidationMessageFor(m => m.FirstName)
         </div>
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.lastName, new { @class = "col-md-2 control-label" })
+        @Html.LabelFor(m => m.LastName, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
-            @Html.TextBoxFor(m => m.lastName, new { @class = "form-control" })
-            @Html.ValidationMessageFor(m => m.lastName)
+            @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.LastName)
         </div>
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.fLAddress, new { @class = "col-md-2 control-label" })
+        @Html.LabelFor(m => m.FLAddress, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
-            @Html.TextBoxFor(m => m.fLAddress, new { @class = "form-control" })
-            @Html.ValidationMessageFor(m => m.fLAddress)
+            @Html.TextBoxFor(m => m.FLAddress, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.FLAddress)
         </div>
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.sLaddress, new { @class = "col-md-2 control-label" })
+        @Html.LabelFor(m => m.SLaddress, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
-            @Html.TextBoxFor(m => m.sLaddress, new { @class = "form-control" })
-            @Html.ValidationMessageFor(m => m.sLaddress)
+            @Html.TextBoxFor(m => m.SLaddress, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.SLaddress)
         </div>
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.city, new { @class = "col-md-2 control-label" })
+        @Html.LabelFor(m => m.City, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
-            @Html.TextBoxFor(m => m.city, new { @class = "form-control" })
-            @Html.ValidationMessageFor(m => m.city)
+            @Html.TextBoxFor(m => m.City, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.City)
         </div>
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.postCode, new { @class = "col-md-2 control-label" })
+        @Html.LabelFor(m => m.PostCode, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
-            @Html.TextBoxFor(m => m.postCode, new { @class = "form-control" })
-            @Html.ValidationMessageFor(m => m.postCode)
+            @Html.TextBoxFor(m => m.PostCode, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.PostCode)
         </div>
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.phoneNumber, new { @class = "col-md-2 control-label" })
+        @Html.LabelFor(m => m.PhoneNumber, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
-            @Html.TextBoxFor(m => m.phoneNumber, new { @class = "form-control" })
-            @Html.ValidationMessageFor(m => m.phoneNumber)
+            @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.PhoneNumber)
         </div>
     </div>
     <div class="form-group">

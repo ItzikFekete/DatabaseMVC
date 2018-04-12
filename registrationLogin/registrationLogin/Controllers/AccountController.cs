@@ -83,7 +83,7 @@ namespace registrationLogin.Controllers
                 case SignInStatus.LockedOut:
                     return View("Lockout");
                 case SignInStatus.RequiresVerification:
-                    return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
+                    return RedirectToAction("SendCode", new { ReturnUrl = returnUrl,  model.RememberMe });
                 case SignInStatus.Failure:
                 default:
                     ModelState.AddModelError("", "Invalid login attempt.");
@@ -153,13 +153,13 @@ namespace registrationLogin.Controllers
             {
                 var user = new ApplicationUser { UserName = model.Email,
                     Email = model.Email,
-                    title= model.title,
-                    firstName = model.firstName,
-                    lastName = model.lastName,
-                    fLAddress= model.fLAddress,
-                    sLaddress = model.sLaddress,
-                    city = model.city,
-                    postCode = model.postCode,
+                    Title= model.Title,
+                    FirstName = model.FirstName,
+                    LastName = model.LastName,
+                    FLAddress= model.FLAddress,
+                    SLaddress = model.SLaddress,
+                    City = model.City,
+                    PostCode = model.PostCode,
                    
                 };
                 var result = await UserManager.CreateAsync(user, model.Password);
@@ -170,7 +170,7 @@ namespace registrationLogin.Controllers
                     // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
                     string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
-                    var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
+                    var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id,  code }, protocol: Request.Url.Scheme);
                     await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
                     return RedirectToAction("Index", "Home");
@@ -324,7 +324,7 @@ namespace registrationLogin.Controllers
             {
                 return View("Error");
             }
-            return RedirectToAction("VerifyCode", new { Provider = model.SelectedProvider, ReturnUrl = model.ReturnUrl, RememberMe = model.RememberMe });
+            return RedirectToAction("VerifyCode", new { Provider = model.SelectedProvider,  model.ReturnUrl,  model.RememberMe });
         }
 
         //
