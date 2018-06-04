@@ -350,8 +350,9 @@ C:\Users\Itzik Private\Documents\GitHub\DatabaseMVC\registrationLogin\registrati
 C:\Users\Itzik Private\Documents\GitHub\DatabaseMVC\registrationLogin\registrationLogin\obj\Debug\registrationLogin.csproj.CoreCompileInputs.cache
 C:\Users\Itzik Private\Documents\GitHub\DatabaseMVC\registrationLogin\registrationLogin\obj\Debug\registrationLogin.dll
 C:\Users\Itzik Private\Documents\GitHub\DatabaseMVC\registrationLogin\registrationLogin\obj\Debug\registrationLogin.pdb
-C:\Users\Itzik Private\Documents\GitHub\DatabaseMVC\registrationLogin\registrationLogin\obj\Debug\registrationLogin.csprojResolveAssemblyReference.cache
 C:\Users\Itzik Private\Documents\GitHub\DatabaseMVC\registrationLogin\registrationLogin\obj\Debug\registrationLogin.Migrations.FirstName.resources
 C:\Users\Itzik Private\Documents\GitHub\DatabaseMVC\registrationLogin\registrationLogin\obj\Debug\registrationLogin.Migrations.LastName.resources
 C:\Users\Itzik Private\Documents\GitHub\DatabaseMVC\registrationLogin\registrationLogin\obj\Debug\registrationLogin.Migrations.City.resources
 C:\Users\Itzik Private\Documents\GitHub\DatabaseMVC\registrationLogin\registrationLogin\obj\Debug\registrationLogin.Migrations.Title.resources
+C:\Users\Itzik Private\Documents\GitHub\DatabaseMVC\registrationLogin\registrationLogin\obj\Debug\registrationLogin.csprojAssemblyReference.cache
+C:\Users\Itzik Private\Documents\GitHub\DatabaseMVC\registrationLogin\registrationLogin\obj\Debug\registrationLogin.csproj.CopyComplete
